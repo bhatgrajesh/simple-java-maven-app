@@ -26,5 +26,10 @@ pipeline {
                 echo 'Job Complete!'
             }
         }
+        stage('Notification') {
+            steps {
+                echo 'Notify the right team on job completion'
+            }
+        }
     }
 }
